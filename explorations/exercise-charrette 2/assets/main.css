@@ -139,9 +139,9 @@ body {
 
 #button-12:active{
 border-radius: 50px;
-   -ms-transform: scale(1, .25); /* IE 9 */
-    -webkit-transform: scale(1,.25); /* Safari */
-    transform: scale(1, .25);
+   -ms-transform: scale(.5, .25); /* IE 9 */
+    -webkit-transform: scale(.5,.25); /* Safari */
+    transform: scale(.5, .25);
 }
 #button-13:active{    -webkit-animation-name:button13; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
@@ -166,21 +166,49 @@ border-radius: 50px;
     100% {background-color:#FFA500; left:0px; top:0px;}
 }
 
-#button-14:hover {
-	    -webkit-animation-name: button14; /* Safari 4.0 - 8.0 */
+#button-14:active {
+	    -webkit-animation-name: newbutton; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: button14;
+    animation-name: newbutton;
     animation-duration: 4s;
-
 }
+
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes button14 {
-    from {border-radius:0;}
-    to {border-radius:15 ;}
+@-webkit-keyframes newbutton {
+    0%   {transform:rotate(40deg);}
+    25%  {transform:rotate(80deg);}
+    50%  {transform:rotate(120deg);}
+    100% {transform:rotate(180deg);}
 }
 
 /* Standard syntax */
-@keyframes button14{
-    from {border-radius:0;}
-    to {border-radius:15;}
+@keyframes newbutton {
+    0%   {transform:rotate(40deg);}
+    25%  {transform:rotate(80deg);}
+    50%  {transform:rotate(120deg);}
+    100% {transform:rotate(180deg);}
 }
+
+#button-15:active{
+	    -webkit-animation-name: ugh; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: ugh;
+    animation-duration: 4s;	
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes ugh {
+    0%   {transform:scale(2) ;}
+    25%  {transform:scale(3) ;}
+    50%  {transform:scale(1) ;}
+    100% {transform:scale(6) ;}
+}
+
+/* Standard syntax */
+@keyframes ugh {
+    0%   {transform:scale(2) ;}
+    25%  {transform:scale(3) ;}
+    50%  {transform:scale(1) ;}
+    100% {transform:scale(6) ;}
+}
+
