@@ -136,7 +136,7 @@ body {
 }
 
 #button-11:active{
-	
+
   background: linear-gradient(to bottom right, #00FFFF, #FFFF00);
 }
 
@@ -173,7 +173,7 @@ border-radius: 50px;
 	    -webkit-animation-name: newbutton; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: newbutton;
-    animation-duration: 4s;
+    animation-duration: 8s;
 }
 
 /* Safari 4.0 - 8.0 */
