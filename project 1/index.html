@@ -19,18 +19,18 @@ if(rd[c].className=='random') {
    xCoord=Math.floor(Math.random()*w);
    yCoord=Math.floor(Math.random()*h);
 
-if(xCoord>=w-rd[c].offsetWidth-10){
-   xCoord=w-rd[c].offsetWidth-10;
+if(xCoord>=w-rd[c].offsetWidth-20){
+   xCoord=w-rd[c].offsetWidth-20;
  }
-if(xCoord<=10){
-   xCoord=10;
+if(xCoord<=20){
+   xCoord=20;
  }
 
-if(yCoord>=h-rd[c].offsetHeight-10){
-   yCoord=h-rd[c].offsetHeight-10;
+if(yCoord>=h-rd[c].offsetHeight-20){
+   yCoord=h-rd[c].offsetHeight-20;
  }
-if(yCoord<=10){
-   yCoord=10;
+if(yCoord<=20){
+   yCoord=20;
  }
 
    rd[c].style.left=xCoord+'px';
@@ -61,7 +61,7 @@ html,body {
 	width:100px;
 	height:100px;
 	position:absolute;
-  padding:10px;
+  padding:20px;
 
   #r1{  width:100px; }
 #r2{  width:200px; }
@@ -167,14 +167,62 @@ html,body {
     50%  {transform:rotate(120deg) scale(1)}
     100% {transform:rotate(180deg) scale(4)}
   }
+
+      #r5:hover{
+
+      -webkit-animation-name: newbutton; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: newbutton;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes newbutton {
+    0%   {transform:rotate(40deg) scale(2)}
+    25%  {transform:rotate(80deg) scale(3)}
+    50%  {transform:rotate(120deg) scale(1)}
+    100% {transform:rotate(180deg) scale(4)}
+}
+
+/* Standard syntax */
+@keyframes newbutton {
+    0%   {transform:rotate(40deg) scale(2)}
+    25%  {transform:rotate(80deg) scale(3)}
+    50%  {transform:rotate(120deg) scale(1)}
+    100% {transform:rotate(180deg) scale(4)}
+  }
+
+      #r6:hover{
+
+      -webkit-animation-name: newbutton; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: newbutton;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes newbutton {
+    0%   {transform:rotate(40deg) scale(2)}
+    25%  {transform:rotate(80deg) scale(3)}
+    50%  {transform:rotate(120deg) scale(1)}
+    100% {transform:rotate(180deg) scale(4)}
+}
+
+/* Standard syntax */
+@keyframes newbutton {
+    0%   {transform:rotate(40deg) scale(2)}
+    25%  {transform:rotate(80deg) scale(3)}
+    50%  {transform:rotate(120deg) scale(1)}
+    100% {transform:rotate(180deg) scale(4)}
+  }
 </style>
    
 <div class="random" id="r1"></div>
 <div class="random" id="r2"></div>
 <div class="random" id="r3"></div>
 <div class="random" id="r4"></div>
-
-
+<div class="random" id="r5"></div>
+<div class="random" id="r6"></div>
 
 
 </head>
