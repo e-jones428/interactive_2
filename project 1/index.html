@@ -52,7 +52,7 @@ if(yCoord<=20){
 html,body {
     height:100%;
     margin:0;
-    background-color: #E0FFFF;
+    background-color: black;
  
 }
 
@@ -62,38 +62,103 @@ html,body {
 	width:100px;
 	height:100px;
 	position:absolute;
-  padding:20px;
+ 	padding:20px;
+ }
 
-  #r1{  width:100px; }
-#r2{  width:200px; }
-#r3{  width:300px; }
-#r4{  width:400px; }
+ #r1{
+ background: linear-gradient(to bottom right, #00FFFF, #8A2BE2);	
+}
 
-  
+  #r2{
+ background: linear-gradient(to top right, #00FFFF, #8A2BE2);	
+
+}
+
+ #r3{
+ background: linear-gradient(to bottom right, #FFD700, #FF6347);	
+
+}
+
+ #r4{
+ background: linear-gradient(to bottom right, #FFD700, #FF6347);	
+	width:300px;
+	height:300px;
+}
+
+ #r5{
+ background: linear-gradient(to bottom left, #EE82EE, #191970);	
+	width:150px;
+	height:150px;
+}
+
+ #r6{
+background: linear-gradient(to top left, #00FFFF, #FFFF00);	
+	width:150px;
+	height:150px;
+}
+
+ #r7{
+ background: linear-gradient(to bottom right, #EE82EE, #191970);	
+	width:200px;
+	height:200px;
+}
+ #r8{
+ background: linear-gradient(to top right, #FFD700, #FF6347);	
+	width:100px;
+	height:100px;
+}
+ #r9{
+ background: linear-gradient(to top left, #00FFFF, #8A2BE2);	
+	width:200px;
+	height:200px;
+}
+ #r10{
+ background: linear-gradient(to top right, #EE82EE, #191970);	
+	width:300px;
+	height:300px;
+}
+ #r11{
+ background: linear-gradient(to top right, #FFD700, #FF6347);	
+	width:100px;
+	height:100px;
+}
+
+ #r12{
+background: linear-gradient(to top left, #00FFFF, #FFFF00);	
+	width:200px;
+	height:200px;
+}
+ #r13{
+ background: linear-gradient(to bottom right, #00FFFF, #8A2BE2);	
+	width:300px;
+	height:300px;
 }
 
 	#r1:hover{
 
+		 background: linear-gradient(to bottom right, #00FFFF, #FF1493);
+
 	    -webkit-animation-name: f1; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
     animation-name: f1;
-    animation-duration: 5s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f1 {
-    0%   {transform:rotate(40deg) scale(2)}
-    25%  {transform:rotate(80deg) scale(3)}
-    50%  {transform:rotate(-120deg) scale(6)}
-    100% {transform:rotate(180deg) scale(1)}
+    0%   {transform: scale(2)}
+    25%  {transform: scale(3)}
+    50%  {transform: scale(2)left:200px; top:0px; }
+    100% {transform: scale(1)}
 }
 
 /* Standard syntax */
 @keyframes f1{
-    0%   {transform:rotate(40deg) scale(2)}
-    25%  {transform:rotate(80deg) scale(3)}
-    50%  {transform:rotate(-120deg) scale(6)}
-    100% {transform:rotate(180deg) scale(1)}
+    0%   {transform: scale(2)}
+    25%  {transform: scale(3)}
+    50%  {transform: scale(2)left:200px; top:0px;}
+    100% {transform: scale(1) }
 
   }
 
@@ -103,13 +168,15 @@ html,body {
     -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
     animation-name: f2;
     animation-duration: 8s;
+        animation-iteration-count: infinite;
+
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f2 {
     0%   {transform:rotate(20deg) scale(2)}
     25%  {transform:rotate(80deg) scale(5)}
-    50%  {transform:rotate(120deg) scale(20)}
+    50%  {transform:rotate(120deg) scale(3) left:200px; top:0px;}
     100% {transform:rotate(270deg) scale(1)}
 }
 
@@ -117,7 +184,7 @@ html,body {
 @keyframes f2 {
     0%   {transform:rotate(20deg) scale(2)}
     25%  {transform:rotate(80deg) scale(5)}
-    50%  {transform:rotate(120deg) scale(20)}
+    50%  {transform:rotate(120deg) scale(3) left:200px; top:0px; }
     100% {transform:rotate(270deg) scale(1) }
   }
 
@@ -127,13 +194,14 @@ html,body {
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: f3;
     animation-duration: 2s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f3 {
     0%   {transform:rotate(-40deg) scale(2)}
     25%  {transform:rotate(-80deg) scale(3)}
-    50%  {transform:rotate(-120deg) scale(8)}
+    50%  {transform:rotate(-120deg) scale(8) }
     100% {transform:rotate(-180deg) scale(1)}
 }
 
@@ -141,23 +209,24 @@ html,body {
 @keyframes f3 {
     0%   {transform:rotate(-40deg) scale(2)}
     25%  {transform:rotate(-80deg) scale(3)}
-    50%  {transform:rotate(-120deg) scale(8)}
+    50%  {transform:rotate(-120deg) scale(8) }
     100% {transform:rotate(-180deg) scale(1)}
   }
 
     #r4:hover{
 
       -webkit-animation-name: f4; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 9s; /* Safari 4.0 - 8.0 */
     animation-name: f4;
-    animation-duration: 4s;
+    animation-duration: 9s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f4 {
     0%   {transform:rotate(40deg) scale(9)}
     25%  {transform:rotate(80deg) scale(6)}
-    50%  {transform:rotate(120deg) scale(10)}
+    50%  {transform:rotate(120deg) scale(10) right:300px; top:0px;}
     100% {transform:rotate(180deg) scale(1)}
 }
 
@@ -165,7 +234,7 @@ html,body {
 @keyframes f4 {
     0%   {transform:rotate(40deg) scale(9)}
     25%  {transform:rotate(80deg) scale(6)}
-    50%  {transform:rotate(120deg) scale(10)}
+    50%  {transform:rotate(120deg) scale(10) right:300px; top:0px;}
     100% {transform:rotate(180deg) scale(1)}
   }
 
@@ -175,12 +244,13 @@ html,body {
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: f5;
     animation-duration: 4s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f5 {
     0%   {transform:rotate(40deg) scale(-5)}
-    25%  {transform:rotate(80deg) scale(3)}
+    25%  {transform:rotate(80deg) scale(3)right:300px; top:300px;}
     50%  {transform:rotate(120deg) scale(-1)}
     100% {transform:rotate(180deg) scale(1)}
 }
@@ -188,7 +258,7 @@ html,body {
 /* Standard syntax */
 @keyframes f5 {
     0%   {transform:rotate(40deg) scale(2)}
-    25%  {transform:rotate(80deg) scale(3)}
+    25%  {transform:rotate(80deg) scale(3)right:300px; top:300px;}
     50%  {transform:rotate(120deg) scale(1)}
     100% {transform:rotate(180deg) scale(1)}
   }
@@ -199,6 +269,7 @@ html,body {
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: f6;
     animation-duration: 4s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -222,21 +293,22 @@ html,body {
     -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
     animation-name: f7;
     animation-duration: 6s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f7 {
-    0%   {transform:rotate(280deg) scale(7)}
-    25%  {transform:rotate(80deg) scale(5)}
-    50%  {transform:rotate(130deg) scale(8)}
+    0%   {transform:rotate(280deg) scale(3)}
+    25%  {transform:rotate(80deg) scale(5) left:300px; top:300px;}
+    50%  {transform:rotate(130deg) scale(3) right:300px; top:300px;}
     100% {transform:rotate(270deg) scale(1)}
 }
 
 /* Standard syntax */
 @keyframes f7 {
-    0%   {transform:rotate(280deg) scale(7)}
-    25%  {transform:rotate(80deg) scale(5)}
-    50%  {transform:rotate(130deg) scale(8)}
+    0%   {transform:rotate(280deg) scale(3)}
+    25%  {transform:rotate(80deg) scale(5) left:300px; top:300px;}
+    50%  {transform:rotate(130deg) scale(3) right:300px; top:300px;}
     100% {transform:rotate(270deg) scale(1)}
   }
         #r8:hover{
@@ -245,6 +317,7 @@ html,body {
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: f8;
     animation-duration: 4s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -269,6 +342,7 @@ html,body {
     -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
     animation-name: f9;
     animation-duration: 10s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -292,35 +366,37 @@ html,body {
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: f10;
     animation-duration: 2s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f10 {
     0%   {transform:rotate(180deg) scale(4)}
-    25%  {transform:rotate(80deg) scale(8)}
-    50%  {transform:rotate(270deg) scale(10)}
+    25%  {transform:rotate(80deg) scale(2)}
+    50%  {transform:rotate(270deg) scale(4)}
     100% {transform:rotate(180deg) scale(1)}
 }
 
 /* Standard syntax */
 @keyframes f10 {
     0%   {transform:rotate(180deg) scale(4)}
-    25%  {transform:rotate(80deg) scale(8)}
-    50%  {transform:rotate(270deg) scale(10)}
+    25%  {transform:rotate(80deg) scale(2)}
+    50%  {transform:rotate(270deg) scale(4)}
     100% {transform:rotate(180deg) scale(1)}
   }
       #r11:hover{
 
       -webkit-animation-name: f11; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
     animation-name: f11;
-    animation-duration: 4s;
+    animation-duration: 10s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes f11 {
     0%   {transform:rotate(180deg) scale(2)}
-    25%  {transform:rotate(80deg) scale(5)}
+    25%  {transform:rotate(80deg) scale(5) right:500px; top:0px;}
     50%  {transform:rotate(270deg) scale(3)}
     100% {transform:rotate(180deg) scale(1)}
 }
@@ -328,7 +404,7 @@ html,body {
 /* Standard syntax */
 @keyframes f11 {
     0%   {transform:rotate(180deg) scale(2)}
-    25%  {transform:rotate(80deg) scale(5)}
+    25%  {transform:rotate(80deg) scale(5) right:500px; top:0px;}
     50%  {transform:rotate(270deg) scale(3)}
     100% {transform:rotate(180deg) scale(1)}
   }
@@ -338,6 +414,7 @@ html,body {
     -webkit-animation-duration: 12s; /* Safari 4.0 - 8.0 */
     animation-name: f12;
     animation-duration: 12s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -361,6 +438,7 @@ html,body {
     -webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
     animation-name: f13;
     animation-duration: 15s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -384,6 +462,7 @@ html,body {
     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
     animation-name: f14;
     animation-duration: 3s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -407,6 +486,7 @@ html,body {
     -webkit-animation-duration: 12s; /* Safari 4.0 - 8.0 */
     animation-name: f15;
     animation-duration: 12s;
+        animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -424,14 +504,16 @@ html,body {
     50%  {transform:rotate(270deg) scale(4)}
     100% {transform:rotate(180deg) scale(1)}
   }
+
+
 </style>
    
-<img src="0fab27bb872619225ee1ee89e4463cdf.jpg" id="r1">
-<div class="random" id="r2"></div>
-<div class="random" id="r3"></div>
-<div class="random" id="r4"></div>
-<div class="random" id="r5"></div>
-<div class="random" id="r6"></div>
+<div class="random"  id="r1"></div>
+<div class="random"  id="r2"></div>
+<div class="random"  id="r3"></div>
+<div class="random"  id="r4"></div>
+<div class="random"  id="r5"></div>
+<div class="random"  id="r6"></div>
 <div class="random" id="r7"></div>
 <div class="random" id="r8"></div>
 <div class="random" id="r9"></div>
