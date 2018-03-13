@@ -16,22 +16,25 @@ background-color: red;
 position: absolute;
 }
 
-.letter:active{
+.letter{
 	    -webkit-animation-name: rotate; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: rotate;
     animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 9;
+    animation-fill-mode:none;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes rotate {
     0%   {transform: rotate(0deg);}
-    100% {transform:rotate(360deg);}
+    100% {transform:rotate(180deg);}
 }
 
 /* Standard syntax */
 @keyframes rotate {
     0%   {transform: rotate(0deg);}
-    100% {transform:rotate(360deg);}
+    100% {transform:rotate(180deg);}
 }
 
 
