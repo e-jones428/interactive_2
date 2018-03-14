@@ -22,7 +22,7 @@ position: absolute;
     animation-name: rotate;
     animation-duration: 4s;
     animation-delay: 2s;
-    animation-iteration-count: 9;
+    animation-iteration-count: 1;
     animation-fill-mode:none;
 }
 /* Safari 4.0 - 8.0 */
@@ -566,17 +566,13 @@ margin-top: 20px;
 width:200px;
 height: 600px;
 float: left;
-    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
-    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    transform: rotate(180deg);
+transform: rotate(360deg);
 }
 
 #p1{
-height:300px;
+height:350px;
 margin-left: 87px;
-margin-top: 8px;
+margin-top: 120px;
 }
 
 #p2{
@@ -594,6 +590,44 @@ margin-top: 250px;
 }
 
 #p4{
+height:185px;
+margin-left: 133px;
+margin-top: 77px;
+
+}
+.qcontainer{
+margin-left:0px;
+margin-top: 20px;
+width:200px;
+height: 600px;
+float: left;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#q1{
+height:350px;
+margin-left: 87px;
+margin-top: 120px;
+}
+
+#q2{
+height:70px;
+transform: rotate(45deg); 
+margin-left: 110px;
+margin-top: 65px;
+}
+
+#q3{
+height:70px;
+transform: rotate(45deg); 
+margin-left: 110px;
+margin-top: 250px;
+}
+
+#q4{
 height:185px;
 margin-left: 133px;
 margin-top: 77px;
@@ -701,6 +735,12 @@ margin-top: 77px;
 <div class="letter" id="p2"></div>	
 <div class="letter" id="p3"></div>
 <div class="letter" id="p4"></div>
+	</div>
+		<div class="qcontainer">
+<div class="letter" id="q1"></div>	
+<div class="letter" id="q2"></div>	
+<div class="letter" id="q3"></div>
+<div class="letter" id="q4"></div>
 	</div>
 
 </body>
