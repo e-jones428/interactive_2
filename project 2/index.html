@@ -18,12 +18,13 @@ position: absolute;
 
 .letter{
 	    -webkit-animation-name: rotate; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
     animation-name: rotate;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
     animation-fill-mode:none;
+    animation-play-state:paused;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes rotate {
@@ -36,6 +37,7 @@ position: absolute;
     0%   {transform: rotate(0deg);}
     100% {transform:rotate(180deg);}
 }
+
 
 
 .acontainer{
@@ -269,7 +271,7 @@ transform: rotate(-45deg);
 #f3{
 height:70px;
 transform: rotate(45deg); 
-margin-left: 110px;
+margin-left: 90px;
 transform: rotate(-80deg);
 margin-top: 90px;
 }
@@ -633,6 +635,158 @@ margin-left: 133px;
 margin-top: 77px;
 
 }
+
+.rcontainer{
+margin-left:0px;
+margin-top: 20px;
+width:200px;
+height: 600px;
+float: left;
+
+}
+
+#r1{
+height:185px;
+margin-left: 87px;
+margin-top: 120px;
+}
+
+#r2{
+height:70px;
+transform: rotate(45deg); 
+margin-left: 110px;
+margin-top: 65px;
+}
+
+#r3{
+height:30px; 
+margin-left: 132px;
+margin-top: 77px;
+}
+
+.scontainer{
+margin-left:0px;
+margin-top: 20px;
+width:200px;
+height: 600px;
+float: left;
+
+}
+
+#s1{
+height:100px;
+margin-left: 87px;
+margin-top: 120px;
+}
+
+#s2{
+height:70px;
+transform: rotate(45deg); 
+margin-left: 110px;
+margin-top: 65px;
+}
+
+#s3{
+height:30px; 
+margin-left: 132px;
+margin-top: 77px;
+}
+#s4{
+height:70px;
+transform: rotate(45deg); 
+margin-left: 110px;
+margin-top: 160px;
+}
+
+#s5{
+height:150px;
+margin-left: 132px;
+margin-top: 170px;
+}
+
+#s6{
+height:70px;
+transform: rotate(-45deg); 
+margin-left: 110px;
+margin-top: 260px;
+}
+
+#s7{
+height:30px; 
+margin-left: 88px;
+margin-top: 248px;
+}
+
+.tcontainer{
+margin-left:0px;
+margin-top: 20px;
+width:200px;
+height:600px;
+float: left;
+}
+
+#t1{
+height:300px;
+margin-left: 87px;
+margin-top: 8px;
+}
+
+#t2{
+height:70px;
+transform: rotate(45deg); 
+margin-left: 90px;
+transform: rotate(-80deg);
+margin-top: 90px;
+}
+.ucontainer{
+margin-left:0px;
+margin-top: 20px;
+width:200px;
+height: 600px;
+float: left;
+}
+
+#u1{
+height:185px;
+margin-left: 133px;
+margin-top: 120px;
+}
+
+#u2{
+height:70px;
+transform: rotate(-45deg); 
+margin-left: 110px;
+margin-top: 250px;
+}
+
+#u3{
+height:185px;
+margin-left: 87px;
+margin-top: 120px;
+margin-top: 77px;
+}
+
+.vcontainer{
+margin-left:0px;
+margin-top: 20px;
+width:200px;
+height: 600px;
+float: left;
+}
+
+#v1{
+height:200px;
+margin-left: 133px;
+margin-top: 120px;
+}
+
+#v2{
+height:250px;
+margin-left: 100px;
+margin-top: 75px;
+transform: rotate(-15deg);
+}
+
   </style>
 
   <script src="script.js"></script>
@@ -741,6 +895,33 @@ margin-top: 77px;
 <div class="letter" id="q2"></div>	
 <div class="letter" id="q3"></div>
 <div class="letter" id="q4"></div>
+	</div>
+	<div class="rcontainer">
+<div class="letter" id="r1"></div>
+<div class="letter" id="r2"></div>
+<div class="letter" id="r3"></div>
+	</div>
+	<div class="scontainer">
+<div class="letter" id="s1"></div>
+<div class="letter" id="s2"></div>
+<div class="letter" id="s3"></div>
+<div class="letter" id="s4"></div>
+<div class="letter" id="s5"></div>
+<div class="letter" id="s6"></div>
+<div class="letter" id="s7"></div>
+	</div>
+	<div class="tcontainer">
+<div class="letter" id="t1"></div>
+<div class="letter" id="t2"></div>
+	</div>
+	<div class="ucontainer">
+<div class="letter" id="u1"></div>
+<div class="letter" id="u2"></div>
+<div class="letter" id="u3"></div>
+	</div>
+	<div class="vcontainer">
+<div class="letter" id="v1"></div>
+<div class="letter" id="v2"></div>
 	</div>
 
 </body>
