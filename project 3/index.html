@@ -6,7 +6,86 @@
 
   <link rel="stylesheet" href="style.css"/>
   <style>
-  	
+
+  .container{
+  	width: auto;
+  	height: auto;
+
+  }
+  
+  #first{
+  	position: absolute;
+    -webkit-animation-name: first; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: first;
+    animation-duration: 2s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+	    
+          opacity:(0);
+}
+
+  #second{
+  	position: absolute;
+    -webkit-animation-name: second; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: second;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+	    
+          opacity:(0);
+}
+
+  #third{
+  	position: absolute;
+    -webkit-animation-name: third; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: third;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+	    
+          opacity:(0);
+}
+
+  	/* Safari 4.0 - 8.0 */
+@-webkit-keyframes first {
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 800px;}
+}
+
+/* Standard syntax */
+@keyframes first{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 800px;}
+}
+
+  	/* Safari 4.0 - 8.0 */
+@-webkit-keyframes second {
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 400px;}
+}
+
+/* Standard syntax */
+@keyframes second{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 400px;}
+}
+
+  	/* Safari 4.0 - 8.0 */
+@-webkit-keyframes third{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 50px;}
+}
+
+/* Standard syntax */
+@keyframes third{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 50px;}
+}
   </style>
 
   <script src="script.js"></script>
@@ -14,6 +93,12 @@
 </head>
 
 <body>
+	<div class="container">
 
+<img id="first" src="assets/rr_1.png">
+<img id="second" src="assets/rr_2.png">
+<img id="third" src="assets/rr_3.png">
+
+	</div>
 </body>
 <html>
