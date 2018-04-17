@@ -85,6 +85,20 @@
           opacity:(0);
 }
 
+  #sixth{
+    position: absolute;
+    -webkit-animation-name: sithth; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: sixth;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+      
+          opacity:(0);
+}
+
+
   	/* Safari 4.0 - 8.0 */
 @-webkit-keyframes first {
     from {opacity: 0; left:0px;}
@@ -136,13 +150,26 @@
     /* Safari 4.0 - 8.0 */
 @-webkit-keyframes fifth{
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 400px;}
+    to {opacity: 1; left: 500px;}
 }
 
 /* Standard syntax */
 @keyframes fifth{
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 400px;}
+    to {opacity: 1; left: 500px;}
+}
+
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes sixth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 50px;}
+}
+
+/* Standard syntax */
+@keyframes sixth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 50px;}
 }
 
   </style>
@@ -159,6 +186,7 @@
 <img id="third" src="assets/rr_3.png">
 <img id="fourth" src="assets/rr_4.png">
 <img id="fifth" src="assets/rr_5.png">
+<img id="sixth" src="assets/rr_6.png">
 	</div>
 </body>
 <html>
