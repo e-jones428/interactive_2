@@ -16,8 +16,9 @@
 
 #name{
 font-family: 'Abel', sans-serif;
-	font-size: 96px;
+	font-size: 72px;
 	position: relative;
+  margin-top: 20px;
 }
 
 
@@ -33,9 +34,21 @@ font-family: 'Abel', sans-serif;
   transform: translateY(20px);
 } 
 
+#fourth:hover {
+  transform: translateY(20px);
+} 
+
+#fifth:hover {
+  transform: translateY(20px);
+} 
+
+#sixth:hover {
+  transform: translateY(20px);
+} 
+
   #first{
-  	position: absolute;
-    max-width: 100vh;
+    position: absolute;
+       max-width: 100vh;
     max-height: 100vh;
     -webkit-animation-name: first; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -43,12 +56,12 @@ font-family: 'Abel', sans-serif;
     animation-duration: 2s;
     animation-fill-mode:both;
        /*STARTING STATE*/
-	    
+      
           opacity:(0);
 }
 
   #second{
-  	position: absolute;
+    position: absolute;
        max-width: 100vh;
     max-height: 100vh;
     -webkit-animation-name: second; /* Safari 4.0 - 8.0 */
@@ -58,12 +71,12 @@ font-family: 'Abel', sans-serif;
     animation-delay: 2s;
     animation-fill-mode:both;
        /*STARTING STATE*/
-	    
+      
           opacity:(0);
 }
 
   #third{
-  	position: absolute;
+    position: absolute;
        max-width: 100vh;
     max-height: 100vh;
     -webkit-animation-name: third; /* Safari 4.0 - 8.0 */
@@ -73,44 +86,127 @@ font-family: 'Abel', sans-serif;
     animation-delay: 4s;
     animation-fill-mode:both;
        /*STARTING STATE*/
-	    
+      
           opacity:(0);
 }
 
-  	/* Safari 4.0 - 8.0 */
+  #fourth{
+    position: absolute;
+       max-width: 100vh;
+    max-height: 100vh;
+    -webkit-animation-name: fourth; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: fourth;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+      
+          opacity:(0);
+}
+
+  #fifth{
+       max-width: 100vh;
+    max-height: 100vh;
+    position: absolute;
+    -webkit-animation-name: fifth; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: fifth;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+      
+          opacity:(0);
+}
+
+  #sixth{
+       max-width: 100vh;
+    max-height: 100vh;
+    position: absolute;
+    -webkit-animation-name: sithth; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: sixth;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+      
+          opacity:(0);
+}
+
+
+    /* Safari 4.0 - 8.0 */
 @-webkit-keyframes first {
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 800px;}
+    to {opacity: 1; left: 1200px;}
 }
 
 /* Standard syntax */
 @keyframes first{
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 800px;}
+    to {opacity: 1; left: 1200px;}
 }
 
-  	/* Safari 4.0 - 8.0 */
+    /* Safari 4.0 - 8.0 */
 @-webkit-keyframes second {
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 400px;}
+    to {opacity: 1; left: 1000px;}
 }
 
 /* Standard syntax */
 @keyframes second{
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 400px;}
+    to {opacity: 1; left: 1000px;}
 }
 
-  	/* Safari 4.0 - 8.0 */
+    /* Safari 4.0 - 8.0 */
 @-webkit-keyframes third{
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 50px;}
+    to {opacity: 1; left: 800px;}
 }
 
 /* Standard syntax */
 @keyframes third{
     from {opacity: 0; left:0px;}
-    to {opacity: 1; left: 50px;}
+    to {opacity: 1; left: 800px;}
+}
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes fourth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 600px;}
+}
+
+/* Standard syntax */
+@keyframes fourth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 600px;}
+}
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes fifth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes fifth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 300px;}
+}
+
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes sixth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 100px;}
+}
+
+/* Standard syntax */
+@keyframes sixth{
+    from {opacity: 0; left:0px;}
+    to {opacity: 1; left: 100px;}
 }
   </style>
 
@@ -121,9 +217,13 @@ font-family: 'Abel', sans-serif;
 <body>
 	<div class="container">
 
-<a href="page_2.html" ><img id="first" src="assets/rr_1.png"></a>
-<a href="page_3.html"><img id="second" src="assets/rr_2.png"></a>
-<a href="page_4.html"> <img id="third" src="assets/rr_3.png"></a>
+<img id="first" src="assets/rr_1.png">
+<img id="second" src="assets/rr_2.png">
+<img id="third" src="assets/rr_3.png">
+<img id="fourth" src="assets/rr_4.png">
+<a href="artpage_5.html"> <img id="fifth" src="assets/rr_6.png"> </a>
+<img id="sixth" src="assets/rr_5.png">
+
 <p id="name">Robert Rauschenberg</p>
 	</div>
 </body>
