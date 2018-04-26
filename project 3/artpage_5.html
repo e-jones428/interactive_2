@@ -17,7 +17,45 @@
        max-width: 100vh;
     max-height: 100vh;
       margin: auto;
+    -webkit-animation-name: enter; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: enter;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode:both;
+       /*STARTING STATE*/
+      
+          opacity:(0);
 }
+
+}
+#info{
+position: relative;
+float:right;
+    -webkit-animation-name: enter; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: enter;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode:both;
+    /*STARTING STATE*/
+      
+          opacity:(0);
+
+}
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes enter{
+    from {opacity: 0; }
+    to {opacity: 1; }
+}
+
+/* Standard syntax */
+@keyframes enter{
+    from {opacity: 0; }
+    to {opacity: 1; }
+}
+
   </style>
 
   <script src="script.js"></script>
@@ -25,8 +63,10 @@
 </head>
 
 <body>
+
 <div class="container">
-<a href="index.html>"> <img id="fifth" src="assets/rr_6.png"> </a>
+<a href="index.html" ><img id="fifth" src="assets/rr_6.png"> </a>
+  <img id="info" src="assets/loop_info.png" style="width:50%;height:50%">
 </div>
 </body>
 <html>
